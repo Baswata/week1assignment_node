@@ -7,15 +7,15 @@ const EventEmitter = require('events');
 const handleRequest = require('./requestHandler'); 
 
 
-const serveEmitter = new EventEmitter();
+const serverEmitter = new EventEmitter();
 
-serveEmitter.on('requestReceived', (method, url) => {
+serverEmitter.on('requestReceived', (method, url) => {
     console.log(`Request received: ${method} ${url}`);
 });
 
 
 const server = http.createServer((req, res) => {
-    serveEmitter.emit('requestReceived', req.method, req.url);
+    serverEmitter.emit('requestReceived', req.method, req.url);
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello, World!');
 });

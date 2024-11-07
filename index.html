@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction to Node.js</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="cointainer mt-5">
+            <h1 class="text-center">Fetched Data</h1>
+            <div id="data-cointainer" class="mt-4"></div>
+
+        </div>
+        <script>
+            fetch('/api/data')
+                .then(response => response.json())
+                .then(data => {
+                  const container = document.getElementById('data-container');
+                  container.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        </script>
+    </body>
+</html>
