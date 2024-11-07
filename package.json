@@ -1,0 +1,12 @@
+{
+  "name": "week1assignment_node",
+  "version": "1.0.0",
+  "description": "Fundamentals of node.js\r Lesson 1 1\r   Node.js was created back in 2009 by Ryan Dahl. His motivation was to create a platform that allows developers to use JavaScript for both clients and server-side development hence unifying programming experience. With invention of node.js, JavaScript could run on server-side because node.js is built on top og Google Chrome's V8 JavaScript engine. Node.js also introduced an event-driven, non-blocking I/O model making it perfect for building fast, scalable application more so those that handle real-time, high traffic applications like collaborative tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
