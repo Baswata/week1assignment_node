@@ -10,7 +10,14 @@ async function fetchData() {
         console.log(response.data);
 
     } catch( error) {
-        console.error('Error fetching data', error);
+        if (error.response) {
+            console.error(`Error: ${error.response.ststus} - ${error.response.statusText}`);
+
+        }else if (error.request) {
+            console.error(`Error: No response received from API`);
+        } else {
+            console.error('Error:', error.message);
+        }
     }
 }
 
