@@ -19,3 +19,11 @@ Lesson 1 1
 Lesson 2
   Installation of node.js involves downloading node.js installer from the official website
   To intialize a project, go to the project directory in your VS code and open a terminal. In the teminal, type 'npm innit -y' and press enter. This will intialize your project and download the necessary dependencies which are stored in package.json file.
+
+Lesson 3
+  Created an index.js file under my project directory which is week1assignment_node. Then I wrote the following code inside my file
+   console.log("Hello, Node.js")
+  Then I ran the following command in my terminal; node index.js, this led to the words 'Hello, Node.js' being printed on my console
+
+Lesson 4
+  
